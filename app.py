@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 DATA_URL = (
-    r"C:\Users\Anshul\.spyder-py3\streamlit-sentiment-dashboard\Tweets"
+    "Tweets.csv"
 )
 
 st.title("Sentiment Analysis of Tweets about US Airlines")

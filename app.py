@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 
 DATA_URL = (
-    "Tweets.csv"
+   "https://github.com/maverick24x/airline_sentiments/blob/master/Tweets.csv"
 )
 
 st.title("Sentiment Analysis of Tweets about US Airlines")

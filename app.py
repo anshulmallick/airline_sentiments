@@ -15,10 +15,6 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib.pyplot as plt
 
 
-DATA_URL = (
-   "Tweets.csv"
-)
-
 st.title("Sentiment Analysis of Tweets about US Airlines")
 st.sidebar.title("Sentiment Analysis of Tweets")
 st.markdown("This application is a Streamlit dashboard used "
@@ -28,7 +24,7 @@ st.sidebar.markdown("This application is a Streamlit dashboard used "
 
 @st.cache(persist=True)
 def load_data():
-    data = pd.read_csv(DATA_URL)
+    data = pd.read_csv('Tweets.csv')
     data['tweet_created'] = pd.to_datetime(data['tweet_created'])
     return data
 
